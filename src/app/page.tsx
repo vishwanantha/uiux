@@ -53,8 +53,8 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-4">
-                  <span className="text-xs font-bold text-[#E21B22]">{article.tag}</span>
-                  <h3 className="text-base font-medium mt-1 group-hover:text-[#E21B22] transition-colors">
+                  <span className="text-xs font-bold text-[E21B22]">{article.tag}</span>
+                  <h3 className="text-base font-medium mt-1 group-hover:text-[E21B22] transition-colors">
                     {article.title}
                   </h3>
                 </div>
@@ -65,11 +65,10 @@ export default function Home() {
       </div>
   
 
-        {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Left Column */}
+         
           <div className="lg:col-span-2">
-            {/* Featured Article */}
+            
             <Link href="/article/rahul-gandhi-manipur" className="group bg-white rounded-md overflow-hidden shadow-sm mb-6 block hover:shadow-md transition-shadow">
               <div className="relative">
                 <Image
@@ -89,7 +88,7 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* News Items */}
+          
             <div className="space-y-4">
               {[
                 {
@@ -136,7 +135,7 @@ export default function Home() {
                     <h3 className="text-base font-medium group-hover:text-red-600 transition-colors">{item.title}</h3>
                     <div className="flex items-center mt-2 text-xs text-gray-500">
                       {item.tags.map((tag, i) => (
-                        <span key={i} className="mr-2 hover:text-gray-700 transition-colors">#{tag}</span>
+                        <span key={i} className="mr-2 hover:text-gray-700 transition-colors">{tag}</span>
                       ))}
                     </div>
                   </div>
@@ -148,7 +147,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Column - Latest News */}
+     
           <div className="lg:col-span-1">
             <div className="bg-white rounded-md overflow-hidden shadow-sm p-4 mb-6 hover:shadow-md transition-shadow">
               <h2 className="text-lg font-bold mb-4">Latest News</h2>
@@ -220,13 +219,13 @@ export default function Home() {
           </div>
         </div>
       
-        {/* Web Specials */}
+ 
         <section className="mb-8 bg-white rounded-md shadow-sm overflow-hidden hover:shadow-md transition-shadow">
           <div className="p-4 border-b">
             <h2 className="text-lg font-bold">Web Specials</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4">
-            {/* Featured Image */}
+          
             <Link href="/article/rahul-gandhi-manipur" className="lg:col-span-1 group">
               <div className="relative h-48 md:h-64 rounded-md overflow-hidden">
                 <Image
@@ -243,7 +242,7 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Bullet Points */}
+   
             <div className="lg:col-span-1">
               <ul className="space-y-3">
                 {[
@@ -266,7 +265,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Advertisement */}
+   
             <div className="lg:col-span-1 group">
               <div className="relative h-48 md:h-64 rounded-md overflow-hidden bg-orange-100 hover:shadow-md transition-shadow">
                 <Image
@@ -290,7 +289,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Marketplace News */}
+    
         <section className="mb-8">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {[
@@ -377,7 +376,7 @@ export default function Home() {
     ))}
   </div>
 </section>
-        {/* Fashion News */}
+        
         <section className="mb-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
@@ -438,7 +437,7 @@ export default function Home() {
         </section>
 
      
-        {/* Fashion News */}
+       
 
 <VideoWall/>
      
@@ -447,10 +446,10 @@ export default function Home() {
  
      
 
-      {/* Main Content */}
+   
       <main className="flex-1">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          {/* Top Banner */}
+       
           <div className="mb-2 mt-0 ml-30">
             <Image
               src="/image1.svg"
@@ -471,7 +470,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Article 1 */}
+             
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/image 14.png"
@@ -490,11 +489,11 @@ export default function Home() {
                   <p className="text-sm text-gray-600 mb-2">
                     The singer-songwriter has been spotted in the label garment...
                   </p>
-                  <p className="text-xs text-gray-500">#fashion</p>
+                  <p className="text-xs text-gray-500">fashion</p>
                 </div>
               </div>
 
-              {/* Article 2 */}
+              
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/image 19.png"
@@ -513,11 +512,11 @@ export default function Home() {
                   <p className="text-sm text-gray-600 mb-2">
                     The singer-songwriter has been spotted in the label garment...
                   </p>
-                  <p className="text-xs text-gray-500">#fashion</p>
+                  <p className="text-xs text-gray-500">fashion</p>
                 </div>
               </div>
 
-              {/* Article 3 */}
+              
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/a10.svg"
@@ -534,11 +533,11 @@ export default function Home() {
                   </div>
                   <h3 className="font-bold mb-1">Sugar Cosmetics unveils its 60th brand-owned store</h3>
                   <p className="text-sm text-gray-600 mb-2">The new store features the complete range of products...</p>
-                  <p className="text-xs text-gray-500">#beauty</p>
+                  <p className="text-xs text-gray-500">beauty</p>
                 </div>
               </div>
 
-              {/* Article 4 */}
+            
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/image 24.png"
@@ -557,11 +556,11 @@ export default function Home() {
                   <p className="text-sm text-gray-600 mb-2">
                     The Arvind brand has been a signature one for 10 years...
                   </p>
-                  <p className="text-xs text-gray-500">#fashion</p>
+                  <p className="text-xs text-gray-500">fashion</p>
                 </div>
               </div>
 
-              {/* Article 5 */}
+       
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/a12.svg"
@@ -580,11 +579,11 @@ export default function Home() {
                   <p className="text-sm text-gray-600 mb-2">
                     The singer-songwriter has been spotted in the label garment...
                   </p>
-                  <p className="text-xs text-gray-500">#fashion</p>
+                  <p className="text-xs text-gray-500">fashion</p>
                 </div>
               </div>
 
-              {/* Article 6 */}
+            
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/image 14.png"
@@ -601,13 +600,12 @@ export default function Home() {
                   </div>
                   <h3 className="font-bold mb-1">Aditya Shetty becomes the face of Just Human</h3>
                   <p className="text-sm text-gray-600 mb-2">The wellness brand has announced its new ambassador...</p>
-                  <p className="text-xs text-gray-500">#wellness</p>
+                  <p className="text-xs text-gray-500">wellness</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Beauty & Wellness Section */}
           <div className="mb-12">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl font-bold">Beauty & Wellness</h2>
@@ -617,7 +615,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Article 1 */}
+             
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/image342.svg"
@@ -636,11 +634,11 @@ export default function Home() {
                   <p className="text-sm text-gray-600 mb-2">
                     The wellness industry makes its mark at the prestigious event...
                   </p>
-                  <p className="text-xs text-gray-500">#wellness</p>
+                  <p className="text-xs text-gray-500">wellness</p>
                 </div>
               </div>
 
-              {/* Article 2 */}
+          
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/image43.svg"
@@ -659,11 +657,11 @@ export default function Home() {
                   <p className="text-sm text-gray-600 mb-2">
                     The beauty brand continues its expansion across major cities...
                   </p>
-                  <p className="text-xs text-gray-500">#beauty</p>
+                  <p className="text-xs text-gray-500">beauty</p>
                 </div>
               </div>
 
-              {/* Article 3 */}
+
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/image34.svg"
@@ -682,20 +680,20 @@ export default function Home() {
                   <p className="text-sm text-gray-600 mb-2">
                     The beauty brand continues its expansion across major cities...
                   </p>
-                  <p className="text-xs text-gray-500">#beauty</p>
+                  <p className="text-xs text-gray-500">beauty</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Food & Beverage Section */}
+        
           <div className="mb-12">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl font-bold">Food & Beverage</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Article 1 */}
+             
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/a6.svg"
@@ -706,11 +704,11 @@ export default function Home() {
                 />
                 <div className="p-4">
                   <h3 className="font-bold text-sm mb-1">Yiwu Farmer Foods enters Retail with Wow! Momo, New China</h3>
-                  <p className="text-xs text-gray-500">#lifestyle</p>
+                  <p className="text-xs text-gray-500">lifestyle</p>
                 </div>
               </div>
 
-              {/* Article 2 */}
+              
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/a4.jpg.svg"
@@ -721,11 +719,11 @@ export default function Home() {
                 />
                 <div className="p-4">
                   <h3 className="font-bold text-sm mb-1">Barista Coffee Company opens its first café in Ahmedabad</h3>
-                  <p className="text-xs text-gray-500">#lifestyle</p>
+                  <p className="text-xs text-gray-500">lifestyle</p>
                 </div>
               </div>
 
-              {/* Article 3 */}
+            
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/a8.svg"
@@ -736,11 +734,11 @@ export default function Home() {
                 />
                 <div className="p-4">
                   <h3 className="font-bold text-sm mb-1">Good Flippin' Burgers opens 8+ Kitchens Across 4 Brands</h3>
-                  <p className="text-xs text-gray-500">#lifestyle</p>
+                  <p className="text-xs text-gray-500">lifestyle</p>
                 </div>
               </div>
 
-              {/* Article 4 */}
+            
               <div className="border border-gray-100 rounded-md overflow-hidden shadow-sm">
                 <Image
                   src="/a15.png"
@@ -751,7 +749,7 @@ export default function Home() {
                 />
                 <div className="p-4">
                   <h3 className="font-bold text-sm mb-1">How Keventers is making milkshakes business space lively</h3>
-                  <p className="text-xs text-gray-500">#lifestyle</p>
+                  <p className="text-xs text-gray-500">lifestyle</p>
                 </div>
               </div>
             </div>
@@ -761,17 +759,17 @@ export default function Home() {
    </div>
    <NewsGrid/>
    <div className="max-w-8xl px-4 py-8">
-      {/* Top Categories Row */}
+     
       <div className="grid  grid-cols-5 lg:grid-cols-5 gap-6 mb-12">
    
 </div>
-      {/* Middle Sections */}
+     
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        {/* Shopping Centers Section */}
+       
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="font-bold text-lg">Shopping Centers</h2>
-            <Link href="#" className="text-sm text-gray-500 flex items-center">
+            <Link href="" className="text-sm text-gray-500 flex items-center">
               See more <span className="ml-1">→</span>
             </Link>
           </div>
@@ -782,7 +780,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">SELECT CITYWALK</span>
                 <span className="text-xs text-gray-500"> | LIFESTYLE</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">Select Citywalk opens 4 new stores in June</h3>
               </Link>
               <div className="flex gap-3">
@@ -798,7 +796,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#real stories podcast</span>
+                <span className="text-xs text-gray-500">real stories podcast</span>
               </div>
             </div>
 
@@ -807,7 +805,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">INFINITI MALL</span>
                 <span className="text-xs text-gray-500"> | NEWS</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">
                   Infiniti Mall collaborates with T-Series & PVR Inox to unveil Adipurush artwork
                 </h3>
@@ -825,7 +823,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#real stories podcast</span>
+                <span className="text-xs text-gray-500">real stories podcast</span>
               </div>
             </div>
 
@@ -834,7 +832,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">MULTIMEDIA</span>
                 <span className="text-xs text-gray-500"> | NEWS</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">
                   DLF creating new retail space in Delhi for France's Galeries Lafayette
                 </h3>
@@ -852,17 +850,17 @@ export default function Home() {
                 </p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#real stories podcast</span>
+                <span className="text-xs text-gray-500">real stories podcast</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Privilege Members Corner Section */}
+     
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="font-bold text-lg">Privilege Members Corner</h2>
-            <Link href="#" className="text-sm text-gray-500 flex items-center">
+            <Link href="" className="text-sm text-gray-500 flex items-center">
               See more <span className="ml-1">→</span>
             </Link>
           </div>
@@ -884,7 +882,7 @@ export default function Home() {
             <div>
               <div className="flex justify-between items-center mb-4">
                 <h2 className="font-bold text-lg">Podcast</h2>
-                <Link href="#" className="text-sm text-gray-500 flex items-center">
+                <Link href="" className="text-sm text-gray-500 flex items-center">
                   See more <span className="ml-1">→</span>
                 </Link>
               </div>
@@ -923,16 +921,16 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Divider */}
+  
       <div className="w-full h-px bg-gray-200 my-8"></div>
 
-      {/* Bottom Sections */}
+ 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        {/* Supply Chain Section */}
+      
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="font-bold text-lg">Supply Chain</h2>
-            <Link href="#" className="text-sm text-gray-500 flex items-center">
+            <Link href="" className="text-sm text-gray-500 flex items-center">
               See more <span className="ml-1">→</span>
             </Link>
           </div>
@@ -943,7 +941,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">FASHION</span>
                 <span className="text-xs text-gray-500"> | TAYLOR SWIFT</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">Ecom Express appoints Ajay Chitkara as CEO</h3>
               </Link>
               <div className="flex gap-3">
@@ -957,7 +955,7 @@ export default function Home() {
                 <p className="text-xs text-gray-600">Chitkara, who is a veteran in the industry...</p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#fashion</span>
+                <span className="text-xs text-gray-500">fashion</span>
               </div>
             </div>
 
@@ -966,7 +964,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">FASHION</span>
                 <span className="text-xs text-gray-500"> | FASHION</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">DTDC sets up super hub in...</h3>
               </Link>
               <div className="flex gap-3">
@@ -980,7 +978,7 @@ export default function Home() {
                 <p className="text-xs text-gray-600">The facility spans over half of space...</p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#fashion</span>
+                <span className="text-xs text-gray-500">fashion</span>
               </div>
             </div>
 
@@ -989,7 +987,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">LIFESTYLE</span>
                 <span className="text-xs text-gray-500"> | RTB</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">KSH Distriparks bolsters its fleet with...</h3>
               </Link>
               <div className="flex gap-3">
@@ -1003,7 +1001,7 @@ export default function Home() {
                 <p className="text-xs text-gray-600">With the addition of new vehicles, the...</p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#fashion</span>
+                <span className="text-xs text-gray-500">fashion</span>
               </div>
             </div>
           </div>
@@ -1013,7 +1011,7 @@ export default function Home() {
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="font-bold text-lg">Marketing</h2>
-            <Link href="#" className="text-sm text-gray-500 flex items-center">
+            <Link href="" className="text-sm text-gray-500 flex items-center">
               See more <span className="ml-1">→</span>
             </Link>
           </div>
@@ -1024,7 +1022,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">FASHION</span>
                 <span className="text-xs text-gray-500"> | TAYLOR SWIFT</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">Vlogger Empower collaborates with actor...</h3>
               </Link>
               <div className="flex gap-3">
@@ -1038,7 +1036,7 @@ export default function Home() {
                 <p className="text-xs text-gray-600">Vlogger Empower's partnership with series will...</p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#fashion</span>
+                <span className="text-xs text-gray-500">fashion</span>
               </div>
             </div>
 
@@ -1047,7 +1045,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">FASHION</span>
                 <span className="text-xs text-gray-500"> | TAYLOR SWIFT</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">From Yourshoes to special offers, here's a quick...</h3>
               </Link>
               <div className="flex gap-3">
@@ -1061,7 +1059,7 @@ export default function Home() {
                 <p className="text-xs text-gray-600">The campaign has been spotted in the hybrid garment...</p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#fashion</span>
+                <span className="text-xs text-gray-500">fashion</span>
               </div>
             </div>
 
@@ -1070,7 +1068,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">FASHION</span>
                 <span className="text-xs text-gray-500"> | TAYLOR SWIFT</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">Malabar Gold & Diamonds ropes...</h3>
               </Link>
               <div className="flex gap-3">
@@ -1084,7 +1082,7 @@ export default function Home() {
                 <p className="text-xs text-gray-600">Signing NTR Jr who stands in...</p>
               </div>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#fashion</span>
+                <span className="text-xs text-gray-500">fashion</span>
               </div>
             </div>
           </div>
@@ -1094,7 +1092,7 @@ export default function Home() {
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="font-bold text-lg">Technology</h2>
-            <Link href="#" className="text-sm text-gray-500 flex items-center">
+            <Link href="" className="text-sm text-gray-500 flex items-center">
               See more <span className="ml-1">→</span>
             </Link>
           </div>
@@ -1105,7 +1103,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">FINANCE</span>
                 <span className="text-xs text-gray-500"> | NEWS</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">
                   PE firm Carlyle offloads entire Carlyle through its special purpose...
                 </h3>
@@ -1126,7 +1124,7 @@ export default function Home() {
                 <span className="text-xs font-bold text-red-600">FINANCE</span>
                 <span className="text-xs text-gray-500"> | NEWS</span>
               </div>
-              <Link href="#" className="block mb-2">
+              <Link href="" className="block mb-2">
                 <h3 className="font-medium text-sm">B2B managed marketplace The Yarn, The Investment...</h3>
               </Link>
               <div className="flex gap-3">
@@ -1147,7 +1145,7 @@ export default function Home() {
                   <span className="text-xs font-bold text-red-600">FINANCE</span>
                   <span className="text-xs text-gray-500"> | NEWS</span>
                 </div>
-                <Link href="#" className="block mb-2">
+                <Link href="" className="block mb-2">
                   <h3 className="font-medium text-xs">Sequoia Capital exits Go Fashion, US-based Sequoia Capital...</h3>
                 </Link>
                 <Image
@@ -1171,7 +1169,7 @@ export default function Home() {
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="font-bold text-lg">Case Studies</h2>
-            <Link href="#" className="text-sm text-gray-500 flex items-center">
+            <Link href="" className="text-sm text-gray-500 flex items-center">
               See more <span className="ml-1">→</span>
             </Link>
           </div>
@@ -1187,7 +1185,7 @@ export default function Home() {
               />
               <h3 className="font-medium text-xs">West Mom Foods enters Retail with West Mom, Wine China</h3>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#retail</span>
+                <span className="text-xs text-gray-500">retail</span>
               </div>
             </div>
 
@@ -1201,7 +1199,7 @@ export default function Home() {
               />
               <h3 className="font-medium text-xs">Simplifying Compliance Management for the latest...</h3>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#retail</span>
+                <span className="text-xs text-gray-500">retail</span>
               </div>
             </div>
 
@@ -1215,7 +1213,7 @@ export default function Home() {
               />
               <h3 className="font-medium text-xs">Digitizing Retailers' Express Through Focus On...</h3>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#retail</span>
+                <span className="text-xs text-gray-500">retail</span>
               </div>
             </div>
           </div>
@@ -1225,7 +1223,7 @@ export default function Home() {
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="font-bold text-lg">Photo Essays</h2>
-            <Link href="#" className="text-sm text-gray-500 flex items-center">
+            <Link href="" className="text-sm text-gray-500 flex items-center">
               See more <span className="ml-1">→</span>
             </Link>
           </div>
@@ -1239,9 +1237,9 @@ export default function Home() {
                 height={120}
                 className="w-full object-cover rounded mb-2"
               />
-              <h3 className="font-medium text-xs">JACKANDJILL's Moment Sings for #DontHideBack 3.0</h3>
+              <h3 className="font-medium text-xs">JACKANDJILL's Moment Sings for DontHideBack 3.0</h3>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#retail</span>
+                <span className="text-xs text-gray-500">retail</span>
               </div>
             </div>
 
@@ -1253,9 +1251,9 @@ export default function Home() {
                 height={120}
                 className="w-full object-cover rounded mb-2"
               />
-              <h3 className="font-medium text-xs">JACKANDJILL's Moment Singh for #DontHideBack 3.0</h3>
+              <h3 className="font-medium text-xs">JACKANDJILL's Moment Singh for DontHideBack 3.0</h3>
               <div className="mt-1">
-                <span className="text-xs text-gray-500">#retail</span>
+                <span className="text-xs text-gray-500">retail</span>
               </div>
             </div>
 
@@ -1269,7 +1267,7 @@ export default function Home() {
       <div className="mt-8 mb-12">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold text-gray-800">Images Group Events</h2>
-          <Link href="#" className="text-sm text-gray-500 flex items-center">
+          <Link href="" className="text-sm text-gray-500 flex items-center">
             See more 
           </Link>
         </div>
@@ -1393,7 +1391,7 @@ export default function Home() {
       <div className="mb-12">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold text-gray-800">Book Store</h2>
-          <Link href="#" className="text-sm text-gray-500 flex items-center">
+          <Link href="" className="text-sm text-gray-500 flex items-center">
             See more
           </Link>
         </div>
@@ -1475,7 +1473,7 @@ export default function Home() {
       <div className="mb-12">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold text-gray-800">Reconnect</h2>
-          <Link href="#" className="text-sm text-gray-500 flex items-center">
+          <Link href="" className="text-sm text-gray-500 flex items-center">
             See more 
           </Link>
         </div>
@@ -1569,7 +1567,7 @@ export default function Home() {
           {/* Company Info */}
           <div className="md:col-span-1">
             <Image
-              src="/pimage 19.png"
+              src="/image 19.png"
               alt="IndiaRetailing"
               width={150}
               height={40}
@@ -1587,16 +1585,16 @@ export default function Home() {
 
             <h4 className="font-medium text-gray-800 mt-6 mb-2">Our Social Media</h4>
             <div className="flex space-x-3 mt-2">
-              <Link href="#" className="text-gray-500 hover:text-gray-700">
+              <Link href="" className="text-gray-500 hover:text-gray-700">
                 <div className="w-8 h-8 border rounded-full flex items-center justify-center">f</div>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-gray-700">
+              <Link href="" className="text-gray-500 hover:text-gray-700">
                 <div className="w-8 h-8 border rounded-full flex items-center justify-center">in</div>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-gray-700">
+              <Link href="" className="text-gray-500 hover:text-gray-700">
                 <div className="w-8 h-8 border rounded-full flex items-center justify-center">yt</div>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-gray-700">
+              <Link href="" className="text-gray-500 hover:text-gray-700">
                 <div className="w-8 h-8 border rounded-full flex items-center justify-center">tw</div>
               </Link>
             </div>
@@ -1613,22 +1611,22 @@ export default function Home() {
             <h3 className="font-semibold text-gray-800 mb-4">About us</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   About IndiaRetailing.com
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Meet the team
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Advertise with us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Contact us
                 </Link>
               </li>
@@ -1637,17 +1635,17 @@ export default function Home() {
             <h3 className="font-semibold text-gray-800 mt-8 mb-4">Bookstore</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Magazines
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Yearbooks
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Other publications
                 </Link>
               </li>
@@ -1659,37 +1657,37 @@ export default function Home() {
             <h3 className="font-semibold text-gray-800 mb-4">Categories</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Fashion & Lifestyle
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Beauty & Wellness
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Food & Beverage
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Consumer Durables & IT
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Entertainment
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Home Décor & Furnishing
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Specialty Retail
                 </Link>
               </li>
@@ -1698,17 +1696,17 @@ export default function Home() {
             <h3 className="font-semibold text-gray-800 mt-8 mb-4">Videos</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Retail with Retail Realty
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   The Store
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   IR Studio
                 </Link>
               </li>
@@ -1720,42 +1718,42 @@ export default function Home() {
             <h3 className="font-semibold text-gray-800 mb-4">Features</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Leaders list
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   People
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Finance & Funding
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   D2C
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Shopping Centers
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Trends
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Research
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Case Studies
                 </Link>
               </li>
@@ -1764,17 +1762,17 @@ export default function Home() {
             <h3 className="font-semibold text-gray-800 mt-8 mb-4">IR Prime Subscription Box</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Lorem ipsum
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Lorem ipsum
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Lorem ipsum
                 </Link>
               </li>
@@ -1786,27 +1784,27 @@ export default function Home() {
             <h3 className="font-semibold text-gray-800 mb-4">Events</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   India Food Forum
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Shopping Centre Next
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Phygital Retail Convention
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   India D2C Summit & Awards
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Internet Commerce Summit
                 </Link>
               </li>
@@ -1815,27 +1813,27 @@ export default function Home() {
             <h3 className="font-semibold text-gray-800 mt-8 mb-4">Retail Functions</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Marketing
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Technology
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Operations
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   HR
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="" className="text-sm text-gray-600 hover:text-gray-900">
                   Supply Chain
                 </Link>
               </li>
