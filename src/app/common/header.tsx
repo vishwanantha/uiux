@@ -1,149 +1,138 @@
-"use client"
-
 import Image from "next/image"
 import Link from "next/link"
+import { Search, Menu } from "lucide-react"
 
-import { useState } from "react"
-
-
-export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const categories = [
-    "Fashion & Lifestyle",
-    "Beauty & Wellness",
-    "Food & Beverage",
-    "Consumer Durables & IT",
-    "Entertainment",
-    "Home Decor & Furnishing",
-    "Specialty Retail",
-  ]
-
-  const navItems = [
-    { name: "Home", path: "/", active: true },
-    { name: "Categories", path: "/categories" },
-    { name: "IR Prime", path: "/prime" },
-    { name: "Events", path: "/events" },
-    { name: "Bookstore", path: "/bookstore" },
-    { name: "Newsletter", path: "/newsletter" },
-    { name: "Video", path: "/video" },
-  ]
-
-  const currentDate = new Date()
-  const formattedDate = currentDate.toLocaleDateString("en-GB", {
-    weekday: "long",
-    day: "numeric",
-  
-    year: "numeric",
-  })
-
+export default function Home() {
   return (
-    <header className="w-full">
+    <main >
       {/* Apple Music Banner */}
-      <div className="w-full bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative w-full h-[120px]">
-            <Image src="/Rectangle.svg" alt="Apple Music promotion" fill className="object-contain" />
-          </div>
-        </div>
+      <div className="w-full p-0">
+        <Image
+          src="/imageiq.png"
+          alt="Apple Music - Millions of songs. One month on us."
+          width={1000}
+          height={250}
+          className="w-[60%] h-auto ml-[220px]"
+          priority
+        />
       </div>
 
-      {/* Logo and Search Bar */}
-      <div className="border-b">
-        <div className="max-w-6xl mx-auto py-4 px-4 flex items-center justify-between">
-          {/* Mobile Menu Button */}
-          <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+      {/* Header Section */}
+      <div className="container mx-auto px-4 py-6 flex items-center justify-between">
+      <div className="relative">
+  <Search className="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+  <input
+    type="text"
+    placeholder="Search here..."
+    className="pl-8 pr-2 py-1 text-sm bg-transparent border-none outline-none focus:ring-0"
+  />
+</div>
+
+        <Link href="/" className="mx-auto">
+          <Image
+            src="/indiaretail.png"
+            alt="IndiaRetailing.com"
+            width={250}
+            height={20}
+            className="h-12 w-auto"
+          />
+        </Link>
+
+        <div className="flex items-center gap-4">
+          <button className="bg-red-600 text-white px-4 py-2 text-sm font-medium rounded hover:bg-red-700 transition-colors">
+            SUBSCRIBE
           </button>
+          <button className="text-gray-800 text-sm font-medium hover:text-red-600 transition-colors">SIGN IN</button>
+        </div>
+      </div>
 
-          {/* Search Bar */}
-          <div className="hidden md:flex items-center border rounded-md px-3 py-1 w-[500px]">
      
-            <input type="text" placeholder="Search here" className="ml-2 outline-none text-sm w-full " />
-          </div>
 
-          {/* Logo */}
-          <div className="flex-1 flex justify-center">
-            <Link href="/">
-              <Image
-                src="/Group.svg"
-                alt="IndiaRetailing.com"
-                width={200}
-                height={40}
-                className="object-contain"
-              />
-            </Link>
-          </div>
+            {/* Navigation Bar */}
+<div className="border-t border-b border-gray-200">
+  <div className="container mx-auto px-4">
+    {/* First Row - Main Navigation */}
+    <div className="flex items-center justify-between">
+      <div className="flex items-center">
+        <button className="p-4">
+          <Menu className="h-6 w-6" />
+        </button>
 
-          {/* Subscribe and Sign In */}
-          <div className="flex items-center gap-2">
-            <button className="bg-[#E21B22] hover:bg-red-700 text-white text-xs px-4 py-1 h-8 rounded">
-              Subscribe
-            </button>
-            <button  className="text-xs px-4 py-1 h-8 border-gray-300">
-              Sign In
-            </button>
-          </div>
-        </div>
+        <nav className="hidden md:flex ml-[100px] items-center space-x-8">
+          <Link href="/" className="py-4 text-red-600 font-medium hover:text-red-700 transition-colors">
+            Home
+          </Link>
+          <Link
+            href="/categories"
+            className="py-4 text-gray-800 font-medium hover:text-red-600 transition-colors"
+          >
+            Categories
+          </Link>
+          <Link href="/ir-prime" className="py-4 text-gray-800 font-medium hover:text-red-600 transition-colors">
+            IR Prime
+          </Link>
+          <Link href="/events" className="py-4 text-gray-800 font-medium hover:text-red-600 transition-colors">
+            Events
+          </Link>
+          <Link href="/bookstore" className="py-4 text-gray-800 font-medium hover:text-red-600 transition-colors">
+            Bookstore
+          </Link>
+          <Link
+            href="/newsletter"
+            className="py-4 text-gray-800 font-medium hover:text-red-600 transition-colors"
+          >
+            Newsletter
+          </Link>
+          <Link href="/video" className="py-4 text-gray-800 font-medium hover:text-red-600 transition-colors">
+            Video
+          </Link>
+          <div className="flex  ml-[80px] text-sm text-gray-600">
+              <span>Friday, 30 June 2023</span>
+            </div>
+        </nav>
       </div>
+    </div>
+    
+    {/* Second Row - Secondary Links */}
+    <div className="hidden md:flex items-center ml-[100px] gap-2 text-sm font-medium py-2 overflow-x-auto">
+      <span className="text-gray-300">•</span>
+      <Link href="#" className="text-gray-800 hover:text-red-600 transition-colors whitespace-nowrap">
+      Fashion & Lifestyle
+      </Link>
+      <span className="text-gray-300">•</span>
+      <Link href="#" className="text-gray-800 hover:text-red-600 transition-colors whitespace-nowrap">
+      Beauty & Wellness
+      </Link>
+      <span className="text-gray-300">•</span>
+      <Link href="#" className="text-gray-800 hover:text-red-600 transition-colors whitespace-nowrap">
+      Food & Beverage
+      </Link>
+      <span className="text-gray-300">•</span>
+      <Link href="#" className="text-gray-800 hover:text-red-600 transition-colors whitespace-nowrap">
+      Consumer Durables & IT
+      </Link>
+      <span className="text-gray-300">•</span>
+      <Link href="#" className="text-gray-800 hover:text-red-600 transition-colors whitespace-nowrap">
+      Entertainment
+      </Link>
+      <span className="text-gray-300">•</span>
+      <Link href="#" className="text-gray-800 hover:text-red-600 transition-colors whitespace-nowrap">
+      Home Decor & Furnishing
+      </Link>
+      <span className="text-gray-300">•</span>
+      <Link href="#" className="text-gray-800 hover:text-red-600 transition-colors whitespace-nowrap">
+      Specialty Retail
+      </Link>
+    
+    </div>
+ 
+      
+              
 
-      {/* Main Navigation */}
-      <div className="border-b">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-between">
-            <nav className="flex-1">
-              <ul className="flex items-center">
-                {navItems.map((item, index) => (
-                  <li key={index}>
-                    <Link
-                      href={item.path}
-                      className={`block px-4 py-3 text-sm font-medium transition-colors ${
-                        item.active ? "text-[#E21B22]" : "text-gray-800 hover:text-[#E21B22]"
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <div className="px-4 text-xs text-gray-500">{formattedDate}</div>
+           
           </div>
-        </div>
-      </div>
+       </div>
 
-      {/* Category Navigation */}
-      <div className="border-b bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center overflow-x-auto whitespace-nowrap py-2 px-4 scrollbar-hide">
-            {categories.map((category, index) => (
-              <div key={index} className="flex items-center">
-                {index !== 0 && <span className="text-gray-300 mx-2">|</span>}
-                <Link
-                  href={`/category/${category.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")}`}
-                  className="text-xs text-gray-700 hover:text-[#E21B22] transition-colors whitespace-nowrap"
-                >
-                  {category}
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </header>
+    </main>
   )
 }

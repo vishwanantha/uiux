@@ -20,7 +20,7 @@ export default function VideoWall() {
           <div className="lg:col-span-5 relative group">
             <div className="relative aspect-video overflow-hidden rounded-lg">
               <Image
-                src="/a6.svg"
+                src="/image29.jpg"
                 alt="Reebok opens store at Lulu Mall, Lucknow"
                 width={400}
                 height={200}
@@ -50,7 +50,7 @@ export default function VideoWall() {
               <div className="relative group">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/a6.svg"
+                    src="/image30.jpg"
                     alt="Retail Rasul: PM Gati Shakti Week 2023"
                     width={200}
                     height={100}
@@ -134,7 +134,7 @@ export default function VideoWall() {
               <div className="relative group">
                 <div className="relative aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/a6.svg"
+                    src="/image27.jpg"
                     alt="Retail Fashion by ABFRL opens 2 stores"
                     width={200}
                     height={100}
